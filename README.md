@@ -1,6 +1,6 @@
 <h2 align="center">
   Portfolio Website - v2.0<br/>
-  <a href="https://soumyajit.vercel.app/" target="_blank">soumyajit.tech</a>
+  <a href="https://vercel.com/markbriank/my-portifolio/4UMHtw9TT3gZXAAsgKvhVbzrjyAn" target="_blank">soumyajit.tech</a>
 </h2>
 
 
@@ -11,7 +11,7 @@ You can fork this repo to modify and make changes of your own. Please give me pr
 
 ## Built With
 
-My personal portfolio <a href="https://soumyajit.vercel.app/" target="_blank"></a><br>
+My personal portfolio <a href="https://vercel.com/markbriank/my-portifolio/4UMHtw9TT3gZXAAsgKvhVbzrjyAn" target="_blank"></a><br>
 
 This project was built using these technologies.
 
