@@ -1,6 +1,6 @@
 <h2 align="center">
   Portfolio Website - v2.0<br/>
-  <a href="https://vercel.com/markbriank/my-portifolio/4UMHtw9TT3gZXAAsgKvhVbzrjyAn" target="_blank">soumyajit.tech</a>
+  <a href="https://vercel.com/markbriank/my-portifolio/4UMHtw9TT3gZXAAsgKvhVbzrjyAn" target="_blank">MarkBrian</a>
 </h2>
 
 
