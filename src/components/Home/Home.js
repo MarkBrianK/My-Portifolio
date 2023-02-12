@@ -21,7 +21,7 @@ function Home() {
               </h1>
 
               <h1 className="heading-name">
-                I'M
+                I am
                 <strong className="main-name"> MarkBrian Karanja</strong>
               </h1>
 
@@ -41,7 +41,7 @@ function Home() {
           </Row>
 
 
-          
+
         </Container>
       </Container>
       <Home2 />
