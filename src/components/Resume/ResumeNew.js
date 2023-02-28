@@ -36,13 +36,13 @@ function ResumeNew() {
         </Row>
         <Row className="resume">
         <Document file={certificate} className="d-flex justify-content-center">
-          <Page pageNumber={1} scale={width > 768 ? 1.7 : 0.6} />
+          <Page pageNumber={1} scale={width > 768 ? 1.0 : 0.3} />
         </Document>
       </Row>
 
         <Row className="resume">
           <Document file={pdf} className="d-flex justify-content-center">
-            <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
+            <Page pageNumber={1} scale={width > 786 ? 1.3 : 0.6} />
           </Document>
         </Row>
 
