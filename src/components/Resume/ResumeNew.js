@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Container, Row } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
 import certificate from "../../Assets/../Assets/cert.pdf";
@@ -17,46 +17,56 @@ function ResumeNew() {
 
   useEffect(() => {
     setWidth(window.innerWidth);
+    const handleResize = () => setWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
 
   return (
     <div>
       <Container fluid className="resume-section">
         <Particle />
-        <Row style={{ justifyContent: "center", position: "relative" }}>
-          <Button
-            variant="primary"
-            href={pdf}
-            target="_blank"
-            style={{ maxWidth: "250px" }}
-          >
-            <AiOutlineDownload />
-            &nbsp;Download CV
-          </Button>
+        <Row className="justify-content-center">
+          <Col xs="auto">
+            <Button
+              variant="primary"
+              href={pdf}
+              target="_blank"
+              className="mb-3"
+            >
+              <AiOutlineDownload />
+              &nbsp;Download CV
+            </Button>
+          </Col>
         </Row>
-        <Row className="resume">
-        <Document file={certificate} className="d-flex justify-content-center">
-          <Page pageNumber={1} scale={width > 768 ? 1.0 : 0.3} />
-        </Document>
-      </Row>
-
-        <Row className="resume">
-          <Document file={pdf} className="d-flex justify-content-center">
-            <Page pageNumber={1} scale={width > 786 ? 1.3 : 0.6} />
-          </Document>
+        <Row className="resume justify-content-center">
+          <Col xs={12} sm={10} md={8} lg={6}>
+            <Document file={certificate}>
+              <Page pageNumber={1} scale={width > 768 ? 1.0 : 0.3} />
+            </Document>
+          </Col>
         </Row>
-
-
-        <Row style={{ justifyContent: "center", position: "relative" }}>
-          <Button
-            variant="primary"
-            href={pdf}
-            target="_blank"
-            style={{ maxWidth: "250px" }}
-          >
-            <AiOutlineDownload />
-            &nbsp;Download CV
-          </Button>
+        <Row className="resume justify-content-center">
+          <Col xs={12} sm={10} md={8} lg={6}>
+            <Document file={pdf}>
+              <Page pageNumber={1} scale={width > 786 ? 1.3 : 0.6} />
+            </Document>
+          </Col>
+        </Row>
+        <Row className="justify-content-center">
+          <Col xs="auto">
+            <Button
+              variant="primary"
+              href={pdf}
+              target="_blank"
+              className="mt-3"
+            >
+              <AiOutlineDownload />
+              &nbsp;Download CV
+            </Button>
+          </Col>
         </Row>
       </Container>
     </div>
